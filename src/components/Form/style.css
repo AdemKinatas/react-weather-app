@@ -1,0 +1,101 @@
+.container {
+    background-color: transparent;
+}
+
+form {
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+    margin-block-end: 10px;
+}
+
+form > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    text-indent: 10px;
+    padding: 10px;
+}
+
+form > input[type=text] {
+    background-color: antiquewhite;
+}
+
+form img {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+form > input:focus {
+    outline: none;
+}
+
+.weather-container {
+    width: 100%;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.text-animation {
+    margin-block: 50px;
+    
+}
+
+.text-animation h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+   
+    color: antiquewhite;
+    text-transform: uppercase;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    min-width: 150px;
+    background-color: rgb(223, 220, 216);
+    border-radius: 15px;
+}
+
+.card-container .icon {
+    width: 75px;
+    height: 75px;
+}
+
+.card-container .icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-container .temp {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (min-width: 520px) {
+    .weather-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 880px) {
+    .weather-container {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media (min-width: 1320px) {
+    .weather-container {
+        grid-template-columns: repeat(8, 1fr);
+    }
+}
